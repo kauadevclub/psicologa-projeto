@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra. Nall Souza - Neuropsicopedagoga Infantil e Adolecente</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Short+Stack&display=swap" rel="stylesheet">
+    <style>
+        .custom-bg {
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm29-22c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23f3e8ff' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+        
+        .child-font {
+            font-family: 'Short Stack', cursive;
+        }
+        
+        .hand-drawn {
+            border: none;
+            background: transparent;
+            position: relative;
+        }
+        
+        .hand-drawn:before {
+            content: "";
+            position: absolute;
+            border: 2px dashed #9ca3af;
+            border-radius: 20px;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            pointer-events: none;
+        }
+        
+        .bounce {
+            animation: bounce 2s infinite;
+        }
+        
+        .float {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+        
+        .slide-in {
+            animation: slideIn 1s ease-out forwards;
+        }
+        
+        @keyframes slideIn {
+            from {
+                transform: translateX(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        
+        .rotate {
+            animation: rotate 8s linear infinite;
+        }
+        
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body class="bg-pink-300 font-sans">
+    <!-- Header -->
+    <header class="custom-bg py-6 px-4 md:px-8 lg:px-16">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <span class="text-3xl mr-2">🧠</span>
+                <h1 class="text-3xl font-bold text-purple-800 child-font animate-pulse">Dra. Nall Souza</h1>
+            </div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#sobre" class="text-gray-700 hover:text-purple-600 transition duration-300">Sobre</a></li>
+                    <li><a href="#servicos" class="text-gray-700 hover:text-purple-600 transition duration-300">Serviços</a></li>
+                    <li><a href="#contato" class="text-gray-700 hover:text-purple-600 transition duration-300">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-16 px-4 md:px-8 lg:px-16 bg-gradient-to-r from-purple-50 to-blue-50 relative overflow-hidden">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0 slide-in">
+                <h2 class="text-4xl md:text-5xl font-bold text-purple-800 mb-4 child-font">Cuidando das emoções dos pequenos</h2>
+                <p class="text-gray-600 mb-6 text-lg">Ajudando crianças a expressarem suas emoções e desenvolverem habilidades para a vida.</p>
+                <a href="https://wa.me/5521926660492?text=Ola!%20Gostaria%20de%20saber%20mais%20sobre%20seu%20Trabalho">
+    <button class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-full hand-drawn transition duration-300 transform hover:scale-105">
+        Agende uma consulta
+    </button>
+</a>
+
+           s     
+                <div class="absolute top-10 left-10 w-16 h-16 rounded-full bg-yellow-200 opacity-30 rotate"></div>
+                <div class="absolute bottom-20 right-20 w-24 h-24 rounded-full bg-purple-200 opacity-30 rotate" style="animation-duration: 10s;"></div>
+            </div>
+            <div class="md:w-1/2 relative">
+                <img src="img/criancas-brincando-e-rindo-com-o-carrossel_1098-4055.avif" alt="Criança brincando" class="rounded-lg shadow-xl w-full max-w-lg mx-auto float">
+                <div class="absolute -bottom-5 -right-5 bg-white p-3 rounded-full shadow-md">
+                    <span class="text-3xl">👶</span>
+                </div>
+                <div class="absolute -top-5 -left-5 bg-yellow-100 p-3 rounded-full shadow-md">
+                    <span class="text-3xl">🧸</span>
+                </div>
+            </div>
+        </div>             
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="py-16 px-4 md:px-8 lg:px-16 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center text-purple-800 mb-12 child-font">Sobre Mim</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center bounce">
+                    <img src="img/472028022_985528273632980_1440832079541546258_n.jpg" alt="Dra. Ana" class="rounded-full w-48 h-48 object-cover border-4 border-purple-200 shadow-lg">
+                </div>
+                <div class="md:w-2/3 md:pl-12">
+                    <p class="text-gray-600 mb-4">Sou Nall Souza,  Neuropsicopedagoga Infantil e Adolecente com foco no desenvolvimento emocional, cognitivo e comportamental das crianças.</p>
+                    <p class="text-gray-600 mb-4">Atuo com avaliação psicológica, neuropsicológica e diagnóstica, além de ser psicopedagoga, neuropsicopedagoga e terapeuta ocupacional.</p>
+                    <p class="text-gray-600 mb-6">Tenho experiência com crianças com Transtorno do Espectro Autista (TEA), sempre com um olhar individualizado e acolhedor.
+
+Meu compromisso é oferecer um atendimento humano, técnico e cuidadoso, ajudando cada criança a desenvolver todo o seu potencial.</p>
+                    <div class="bg-purple-100 p-4 rounded-lg hand-drawn inline-flex items-center">
+                        <span class="text-2xl mr-2">🎓</span>
+                        <span class="font-medium">CRP: 00/00000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="py-16 px-4 md:px-8 lg:px-16 bg-gray-50">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center text-purple-800 mb-12 child-font">Como Posso Ajudar</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-4xl mb-4 text-purple-600">🧒</div>
+                    <h3 class="text-xl font-bold mb-2 child-font">Ansiedade Infantil</h3>
+                    <p class="text-gray-600">Ajuda para crianças que apresentam preocupações excessivas, medos ou dificuldade de separação dos pais.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-4xl mb-4 text-purple-600">🎨</div>
+                    <h3 class="text-xl font-bold mb-2 child-font">Terapia Artística</h3>
+                    <p class="text-gray-600">Uso de técnicas artísticas para ajudar a criança a expressar emoções e processar experiências difíceis.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-4xl mb-4 text-purple-600">👪</div>
+                    <h3 class="text-xl font-bold mb-2 child-font">Orientação Parental</h3>
+                    <p class="text-gray-600">Suporte para pais que enfrentam desafios com o desenvolvimento emocional e comportamental dos filhos.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-4xl mb-4 text-purple-600">😔</div>
+                    <h3 class="text-xl font-bold mb-2 child-font">Depressão Infantil</h3>
+                    <p class="text-gray-600">Acompanhamento para crianças que apresentam tristeza persistente, desinteresse e mudanças de comportamento.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-4xl mb-4 text-purple-600">🏫</div>
+                    <h3 class="text-xl font-bold mb-2 child-font">Dificuldades Escolares</h3>
+                    <p class="text-gray-600">Avaliação e intervenção para problemas de aprendizagem, atenção e relacionamento no ambiente escolar.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-4xl mb-4 text-purple-600">👥</div>
+                    <h3 class="text-xl font-bold mb-2 child-font">Habilidades Sociais</h3>
+                    <p class="text-gray-600">Desenvolvimento de competências para melhorar o convívio social e resolver conflitos de forma assertiva.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 px-4 md:px-8 lg:px-16 bg-pink-300">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center text-purple-800 mb-12 child-font">Depoimentos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md relative">
+                    <div class="absolute -top-4 -left-4 bg-purple-600 text-white rounded-full w-10 h-10 flex items-center justify-center">👩</div>
+                    <p class="text-gray-600 italic mb-4">"A Dra. Ana tem uma abordagem incrível com meu filho. Ele sempre sai da sessão mais alegre e compreensivo com suas próprias emoções."</p>
+                    <p class="text-purple-800 font-medium">Mãe do Pedro, 6 anos</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md relative">
+                    <div class="absolute -top-4 -left-4 bg-purple-600 text-white rounded-full w-10 h-10 flex items-center justify-center">👨</div>
+                    <p class="text-gray-600 italic mb-4">"Minha filha tinha muitas dificuldades na escola e hoje, depois de 6 meses de terapia, está muito mais confiante e focada. A transformação foi impressionante!"</p>
+                    <p class="text-purple-800 font-medium">Pai da Maria, 8 anos</p>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md relative">
+                    <div class="absolute -top-4 -left-4 bg-purple-600 text-white rounded-full w-10 h-10 flex items-center justify-center">👩</div>
+                    <p class="text-gray-600 italic mb-4">"A Dra. Ana tem uma conexão maravilhosa com meu filho. Ele sempre volta das sessões mais feliz e entendendo melhor o que sente."</p>
+                    <p class="text-purple-800 font-medium">Mãe do Arthur, 7 anos</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md relative">
+                    <div class="absolute -top-4 -left-4 bg-purple-600 text-white rounded-full w-10 h-10 flex items-center justify-center">👨</div>
+                    <p class="text-gray-600 italic mb-4">"Ver a Maria se desenvolver tem sido emocionante. Ela passou de insegura e dispersa para uma criança mais centrada e cheia de autoestima. A terapia fez toda a diferença."</p>
+                    <p class="text-purple-800 font-medium">Pai da Jeovana, 10 anos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-16 px-4 md:px-8 lg:px-16 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center text-purple-800 mb-12 child-font">Entre em Contato</h2>
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-gray-700 mb-1">Seu Nome</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 mb-1">Seu Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 mb-1">Sua Mensagem</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+                        </div>
+                        <button type="submit" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105 hand-drawn">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+                <div class="md:w-1/2 md:pl-8">
+                    <div class="bg-purple-50 p-6 rounded-lg h-full">
+                        <h3 class="text-xl font-bold mb-4 child-font text-purple-800">Informações de Contato</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <span class="text-2xl mr-3">📱</span>
+                                <div>
+                                    <h4 class="font-bold text-gray-700">Telefone</h4>
+                                    <p class="text-gray-600">(21) 926660-492</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-2xl mr-3">✉️</span>
+                                <div>
+                                    <h4 class="font-bold text-gray-700">Email</h4>
+                                    <p class="text-gray-600">psinallsouza.com.br</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-2xl mr-3">🏢</span>
+                                <div>
+                                    <h4 class="font-bold text-gray-700">Endereço</h4>
+                                    <p class="text-gray-600">Santa Cruz da Serra <br>Rio de Janeiro - RJ</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-2xl mr-3">⏰</span>
+                                <div>
+                                    <h4 class="font-bold text-gray-700">Horário de Atendimento</h4>
+                                    <p class="text-gray-600">Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 12h</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="py-16 px-4 md:px-8 lg:px-16 bg-pink-300">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center text-purple-800 mb-12 child-font">Artigos Recentes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-purple-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-4xl mb-4 text-purple-600">📚</div>
+                    <h3 class="text-xl font-bold mb-2 child-font">Como Identificar Ansiedade em Crianças</h3>
+                    <p class="text-gray-600 mb-4">Aprenda os sinais precoces de ansiedade infantil e como ajudar seu filho a lidar com sentimentos difíceis.</p>
+                    <a href="https://www.scielo.br/j/pusf/a/S3BmGxTYd9hf6vxgDHCDxGk/" class="text-purple-600 font-medium flex items-center">Ler mais <span class="ml-2">→</span></a>
+                </div>
+                <div class="bg-purple-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-4xl mb-4 text-purple-600">🧒</div>
+                    <h3 class="text-xl font-bold mb-2 child-font">O Poder do Brincar no Desenvolvimento</h3>
+                    <p class="text-gray-600 mb-4">Entenda como as brincadeiras ajudam no desenvolvimento emocional e cognitivo das crianças.</p>
+                    <a href="https://www.institutoarcor.org.br/uma-visao-mais-ampla-sobre-o-brincar-e-a-sua-importancia-na-vida-das-criancas/?gad_source=1&gad_campaignid=20561566310&gbraid=0AAAAAoyJuWwi9JY7nPFt4r9mQDex6MvN3&gclid=EAIaIQobChMIzIGks5_YjQMVGZtaBR3O3giFEAAYASAAEgKbufD_BwE" class="text-purple-600 font-medium flex items-center">Ler mais <span class="ml-2">→</span></a>
+                </div>
+                <div class="bg-purple-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-4xl mb-4 text-purple-600">👪</div>
+                    <h3 class="text-xl font-bold mb-2 child-font">Dicas para Fortalecer Vínculos Familiares</h3>
+                    <p class="text-gray-600 mb-4">Atividades simples que podem melhorar a conexão emocional entre pais e filhos.</p>
+                    <a href="https://www.institutosol.org.br/post/adolescencia-nao-tem-roteiro-simples---e-tudo-bem?gad_source=1&gad_campaignid=20283504647&gbraid=0AAAAADEXE3MrBfxn3c6wOkicJPb3SFre2&gclid=EAIaIQobChMIv6f3zp_YjQMV5pxaBR0PuwS_EAAYASAAEgIAZvD_BwE" class="text-purple-600 font-medium flex items-center">Ler mais <span class="ml-2">→</span></a>
+                </div>
+            </div>
+            <div class="text-center mt-10">
+                <a href="#" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 inline-flex items-center hand-drawn">
+                    Ver todos os artigos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 px-4 md:px-8 lg:px-16 bg-gray-50">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl font-bold text-center text-purple-800 mb-12 child-font">Perguntas Frequentes</h2>
+            <div class="space-y-4">
+                <div class="bg-white p-6 rounded-lg shadow-md hand-drawn">
+                    <h3 class="text-xl font-bold flex justify-between items-center cursor-pointer child-font">
+                        <span>Com que idade devo procurar um psicólogo infantil?</span>
+                        <span>+</span>
+                    </h3>
+                    <div class="mt-2 text-gray-600">
+                        Não existe uma idade mínima. Se a criança apresentar mudanças comportamentais significativas, dificuldades de aprendizagem ou problemas emocionais que persistam por mais de algumas semanas, é recomendável buscar ajuda profissional.
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hand-drawn">
+                    <h3 class="text-xl font-bold flex justify-between items-center cursor-pointer child-font">
+                        <span>Quanto tempo dura cada sessão de terapia?</span>
+                        <span>+</span>
+                    </h3>
+                    <div class="mt-2 text-gray-600">
+                        As sessões geralmente duram entre 45 a 50 minutos. Para crianças muito pequenas, podem ser mais curtas (30 minutos), adaptando-se à capacidade de atenção da criança.
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hand-drawn">
+                    <h3 class="text-xl font-bold flex justify-between items-center cursor-pointer child-font">
+                        <span>Os pais participam das sessões?</span>
+                        <span>+</span>
+                    </h3>
+                    <div class="mt-2 text-gray-600">
+                        Na primeira sessão, os pais estão sempre presentes. Depois, pode variar conforme a abordagem e as necessidades da criança. Periodicamente realizamos sessões de orientação com os pais separadamente.
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hand-drawn">
+                    <h3 class="text-xl font-bold flex justify-between items-center cursor-pointer child-font">
+                        <span>Como funciona o sigilo com crianças?</span>
+                        <span>+</span>
+                    </h3>
+                    <div class="mt-2 text-gray-600">
+                        Respeitamos o sigilo da criança, exceto em situações que envolvam risco de dano a ela ou a terceiros. Sempre incentivamos a criança a compartilhar com os pais sobre o que acontece nas sessões, mas nunca revelamos detalhes sem seu consentimento.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-pink-300 text-white py-8 px-4 md:px-8 lg:px-16">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-2xl font-bold child-font">Dra. Nall Souza</h3>
+                    <p class="text-white"> Neuropsicopedagoga Infantil e Adolecente</p>
+                </div>
+                <div class="flex space-x-4 mb-4 md:mb-0">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/psi.nall/" class="text-gray-400 hover:text-white transition duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <hr class="border-gray-700 my-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-white text-sm mb-4 md:mb-0">© 2023 Dra. Nall Souza  Neuropsicopedagoga Infantil e Adolecente. Todos os direitos reservados.</p>
+                <div class="text-center">
+                    <p class="text-sm text-white">Desenvolvido por</p>
+                    <p class="text-lg font-bold text-blue-300 child-font animate-pulse">Kauã André</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple animations on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('.slide-in');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateX(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            elements.forEach(element => {
+                observer.observe(element);
+            });
+            
+            // More interactive elements could be added here
+        });
+    </script>
+</body>
+</html>
