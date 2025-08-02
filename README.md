@@ -3,7 +3,7 @@
 Este é um site desenvolvido como parte do meu portfólio profissional, com foco em um modelo de página para psicólogas ou consultórios de psicologia. O objetivo é demonstrar minhas habilidades em desenvolvimento web, criando interfaces bonitas, informativas e acessíveis para profissionais da área da saúde mental.
 
 ## 🔗 Acesse o site
-👉 [Visualizar site online](https://kauadevclub.github.io/nome-do-repositorio)
+👉 [Visualizar site online](https://kauadevclub.github.io/psicologa-projeto/)
 
 ---
 
